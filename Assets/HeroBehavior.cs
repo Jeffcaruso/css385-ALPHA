@@ -257,15 +257,15 @@ public class HeroBehavior : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundLength);
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if(col.CompareTag("Piston"))
-        {
-            Debug.Log("TESTING Collided with piston, die now");
+    //private void OnTriggerEnter2D(Collider2D col)
+    //{
+    //    if(col.CompareTag("Piston"))
+    //    {
+    //        Debug.Log("TESTING Collided with piston, die now");
 
-            Application.Quit();
-        }
-    }
+    //        Application.Quit();
+    //    }
+    //}
 
 }
 
