@@ -221,6 +221,8 @@ public class HeroBehavior : MonoBehaviour
         if(col.CompareTag("Piston"))
         {
             Debug.Log("TESTING Collided with piston, die now");
+
+            Application.Quit();
         }
     }
 
