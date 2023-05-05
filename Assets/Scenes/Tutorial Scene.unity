@@ -448,7 +448,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 76.968376
+  orthographic size: 94.01691
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -472,7 +472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143, y: 74, z: -10}
+  m_LocalPosition: {x: 194.3, y: 74, z: -10}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2054,7 +2054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643988679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 82, y: 73, z: 0}
+  m_LocalPosition: {x: 51.3, y: 40.4, z: 0}
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2097,9 +2097,9 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: -0.0000008866191, y: 0.0000018402934}
-  m_ConnectedAnchor: {x: 658.66766, y: 600.21936}
+  m_ConnectedAnchor: {x: 87.699974, y: 76.100044}
   m_AutoConfigureDistance: 1
-  m_Distance: 781.3487
+  m_Distance: 50.9848
   m_MaxDistanceOnly: 0
 --- !u!120 &1643988686
 LineRenderer:
