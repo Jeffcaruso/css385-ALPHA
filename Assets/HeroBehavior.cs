@@ -42,17 +42,47 @@ public class HeroBehavior : MonoBehaviour
     private Vector2 direction;
     private float jumpTimer;
 
+
+    [Header("Grapple Vars")]
+    public float grappleDist = 300f;
+    public bool isGrappling = false;
+    public GameObject player;
+    Rigidbody playerRigidbody;
+
+
+
     // Start is called before frame 0
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerRigidbody = player.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ///Grapple stuff...
+        Vector3 pos = transform.position;
+        isGrappling = GetComponent<Grappler>().localGrapple;
+
+        if(isGrappling)
+        {
+            //don't do movement
+            Debug.Log("grapple!");
+            return;
+        }
+
+        
+
+
+
+
+        // end grapple stuff...
+
+
+
         //ground detection via Raycasts
-        Debug.Log("On ground is : " + onGround + "\n");
+        //Debug.Log("On ground is : " + onGround + "\n");
         onGround = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayer) || 
             Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayer) ||
             Physics2D.Raycast(transform.position + (colliderOffset /2), Vector2.down, groundLength, groundLayer) ||
@@ -73,7 +103,7 @@ public class HeroBehavior : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 //do spring shoes (mega jump) this round
-                Debug.Log("Testing, LeftShift has been pressed, ultra jump!");
+                //Debug.Log("Testing, LeftShift has been pressed, ultra jump!");
 
                 //prevent overloading of force with many shifts being pressed...
                 jumpForce = defaultJumpForce;
@@ -85,7 +115,7 @@ public class HeroBehavior : MonoBehaviour
             //normal jump
             else if (Input.GetKeyDown(KeyCode.W))
             {
-                Debug.Log("Testing, W has been pressed, normal jump!");
+                //Debug.Log("Testing, W has been pressed, normal jump!");
 
                 jumpForce = defaultJumpForce; //this also just might make more sense than the if on 50-53
                 jumpTimer = Time.time + jumpDelay;
@@ -96,7 +126,13 @@ public class HeroBehavior : MonoBehaviour
         }
 
         ///very important line directly below!!!
-        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));       
+        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));   
+        
+
+
+
+
+
     }
 
 
@@ -151,6 +187,11 @@ public class HeroBehavior : MonoBehaviour
     // 2) Slow Deceleration when jumping up (reduced gravity while still moving upwards), still is quite high gravity compared to earth... IN AIR
     private void ModifyPhysics()
     {
+        isGrappling = GetComponent<Grappler>().localGrapple;
+        if (isGrappling)
+        {
+            return;
+        }
         bool changingDirections = (direction.x > 0 && rb.velocity.x < 0) || (direction.x < 0 && rb.velocity.x > 0);
 
         if (onGround) {
