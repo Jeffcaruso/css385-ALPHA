@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 16336022}
   - component: {fileID: 16336021}
   m_Layer: 5
-  m_Name: Text (TMP) - Shift (3)
+  m_Name: Text (TMP) - grapple block placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 1045634471}
   - component: {fileID: 1045634470}
   m_Layer: 5
-  m_Name: Text (TMP) - Shift (2)
+  m_Name: Text (TMP) - graple block instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1075,7 +1075,7 @@ GameObject:
   - component: {fileID: 1342519193}
   - component: {fileID: 1342519192}
   m_Layer: 5
-  m_Name: Text (TMP) - Shift (1)
+  m_Name: Text (TMP) - safety message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 1451897522}
   - component: {fileID: 1451897521}
   m_Layer: 5
-  m_Name: Text (TMP) - Shift
+  m_Name: Text (TMP) - Shift -  big jump instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1345,7 +1345,7 @@ GameObject:
   - component: {fileID: 1624587727}
   - component: {fileID: 1624587726}
   m_Layer: 5
-  m_Name: Text (TMP) - W
+  m_Name: Text (TMP) - W - normal jump instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
