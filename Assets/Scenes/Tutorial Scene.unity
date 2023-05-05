@@ -2054,7 +2054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643988679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.3, y: 40.4, z: 0}
+  m_LocalPosition: {x: 82.1, y: 46, z: 0}
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2099,7 +2099,7 @@ DistanceJoint2D:
   m_Anchor: {x: -0.0000008866191, y: 0.0000018402934}
   m_ConnectedAnchor: {x: 87.699974, y: 76.100044}
   m_AutoConfigureDistance: 1
-  m_Distance: 50.9848
+  m_Distance: 30.616497
   m_MaxDistanceOnly: 0
 --- !u!120 &1643988686
 LineRenderer:
