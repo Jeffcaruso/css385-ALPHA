@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21532868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1303.9, y: 92.7, z: 0}
-  m_LocalScale: {x: 26.697681, y: 256.73138, z: 25.673138}
+  m_LocalPosition: {x: 1306.1411, y: 343.5443, z: 0}
+  m_LocalScale: {x: 31.181267, y: 805.00916, z: 25.673138}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -216,7 +216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4751790832678319560, guid: b2db7cbf3f80d9548b7c5c2a0ebdca1a, type: 3}
       propertyPath: m_Name
-      value: grappleBlock
+      value: grappleBlock - floor 1 swing
       objectReference: {fileID: 0}
     - target: {fileID: 4751790832678319564, guid: b2db7cbf3f80d9548b7c5c2a0ebdca1a, type: 3}
       propertyPath: m_RootOrder
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 69232150}
   - component: {fileID: 69232149}
   m_Layer: 5
-  m_Name: Text (TMP) - D - move instructions
+  m_Name: Text (TMP) - D - more player choices to make label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +354,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pick again
+  m_text: 'Pick again,
+
+    High or low?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1248,7 +1250,7 @@ GameObject:
   - component: {fileID: 435858822}
   - component: {fileID: 435858821}
   m_Layer: 3
-  m_Name: Floor (3)
+  m_Name: Floor 3
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1380,7 +1382,7 @@ GameObject:
   - component: {fileID: 479781408}
   - component: {fileID: 479781407}
   m_Layer: 3
-  m_Name: tall obstacle (3)
+  m_Name: Floor 1 - Slalom 3
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,7 +1493,7 @@ GameObject:
   - component: {fileID: 504517393}
   - component: {fileID: 504517392}
   m_Layer: 3
-  m_Name: tall obstacle (5)
+  m_Name: Floor 1 - Slalom 6
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1602,7 +1604,7 @@ GameObject:
   - component: {fileID: 601417909}
   - component: {fileID: 601417908}
   m_Layer: 5
-  m_Name: Text (TMP) - D - move instructions
+  m_Name: Text (TMP) - D - player H/L prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1737,7 +1739,7 @@ GameObject:
   - component: {fileID: 639462603}
   - component: {fileID: 639462602}
   m_Layer: 3
-  m_Name: tall obstacle (1)
+  m_Name: Floor 1 - Slalom 1
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1848,7 +1850,7 @@ GameObject:
   - component: {fileID: 670499253}
   - component: {fileID: 670499252}
   m_Layer: 3
-  m_Name: tall obstacle (4)
+  m_Name: Floor 1 - Slalom 4
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1947,6 +1949,117 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &674312907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674312910}
+  - component: {fileID: 674312909}
+  - component: {fileID: 674312908}
+  m_Layer: 3
+  m_Name: Floor 2 - fakeout obstacle
+  m_TagString: Floor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &674312908
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674312907}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &674312909
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674312907}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &674312910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674312907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 888, y: 305, z: 0}
+  m_LocalScale: {x: 16.46853, y: 119.28723, z: 25.673138}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706463918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,7 +2072,7 @@ GameObject:
   - component: {fileID: 706463920}
   - component: {fileID: 706463919}
   m_Layer: 3
-  m_Name: tall obstacle (2)
+  m_Name: Floor 1 - Slalom 2
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2070,7 +2183,7 @@ GameObject:
   - component: {fileID: 825900852}
   - component: {fileID: 825900851}
   m_Layer: 3
-  m_Name: tall obstacle
+  m_Name: Floor 3- impossible wall
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,7 +2294,7 @@ GameObject:
   - component: {fileID: 898655425}
   - component: {fileID: 898655424}
   m_Layer: 3
-  m_Name: tall obstacle (6)
+  m_Name: Floor 1 - Slalom 5
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2427,7 +2540,7 @@ GameObject:
   - component: {fileID: 1008498729}
   - component: {fileID: 1008498728}
   m_Layer: 5
-  m_Name: Text (TMP) - D - move instructions
+  m_Name: Text (TMP) - D - Player asssurance of safety
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2668,8 +2781,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008840914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.1361, y: 371.3308, z: 0}
-  m_LocalScale: {x: 25.527075, y: 714.0607, z: 25.673138}
+  m_LocalPosition: {x: 27.8643, y: 361.8645, z: 0}
+  m_LocalScale: {x: 26.984673, y: 782.5041, z: 25.673138}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2687,7 +2800,7 @@ GameObject:
   - component: {fileID: 1011846661}
   - component: {fileID: 1011846660}
   m_Layer: 5
-  m_Name: Text (TMP) - D - move instructions
+  m_Name: Text (TMP) - D - victory sign!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2823,7 +2936,7 @@ GameObject:
   - component: {fileID: 1015108860}
   - component: {fileID: 1015108859}
   m_Layer: 3
-  m_Name: Floor
+  m_Name: Floor 1 (part 1)
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3091,7 +3204,7 @@ GameObject:
   - component: {fileID: 1500808381}
   - component: {fileID: 1500808380}
   m_Layer: 3
-  m_Name: Floor (2)
+  m_Name: Floor 2
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3513,7 +3626,7 @@ GameObject:
   - component: {fileID: 2047540686}
   - component: {fileID: 2047540685}
   m_Layer: 3
-  m_Name: Floor (1)
+  m_Name: Floor 1 (Part 2)
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
