@@ -68,7 +68,7 @@ public class HeroBehavior : MonoBehaviour
         if(isGrappling)
         {
             //don't do movement
-            Debug.Log("grapple!");
+            //Debug.Log("grapple!");
             return;
         }
 
@@ -257,15 +257,16 @@ public class HeroBehavior : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundLength);
     }
 
-    //private void OnTriggerEnter2D(Collider2D col)
-    //{
-    //    if(col.CompareTag("Piston"))
-    //    {
-    //        Debug.Log("TESTING Collided with piston, die now");
-
-    //        Application.Quit();
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+       if(col.CompareTag("Void"))
+       {
+           GameObject respawnPoint = col.gameObject.transform.parent.GetChild(0).gameObject;
+           transform.position = new Vector3(respawnPoint.transform.position.x,
+                                            respawnPoint.transform.position.y,
+                                            transform.position.z);
+       }
+    }
 
 }
 
